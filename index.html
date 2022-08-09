@@ -3,38 +3,47 @@
     <!-- first web dev project-->
     <head>
         <title>Patrick Gu</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content=""width=device-width, initial-scale="1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://kit.fontawesome.com/77e8f48fd0.js" crossorigin="anonymous"></script>
+        <!--for future contents -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
 
     <body>
-        <div class="wrapper">
-            <!--
-                two layers: top layer to display name and bottom layer to display the rest of the information 
-            -->
-            <div class="top">    
-                <h1>This is Patrick Gu,</h1>
-            </div>
-    
-            <!--
-                <img class="profile-picture" src="img/face.jpg" width="200"/>
-            -->
-            
-            <div class="bottom">
-                <ul style="list-style-type:none;">
-                    <li><a href="https://www.linkedin.com/in/patrick-gu/" class="fa fa-linkedin"></a></li>
-                    <li><a href="https://github.com/BaekiPog" class="fa fa-github"></a></li>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo home-logo"><a href="index.html">Patrick Gu</a></div>
+                <ul class="menu">
+                    <li><a href="about/index.html">About</a></li>
+                    <li><a href="experience/index.html">Experience</a></li>
+                    <li><a href="contact/index.html">Contact</a></li>
                 </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- home page -->
+        <main class="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">Hi, this is</div>
+                    <div class="text-2">Patrick Gu</div>
+                    <div class="text-3">B.A. Computer Science'24 at University of California, Berkeley</div>
+                    <ul class="links">
+                        <li><a href="https://www.linkedin.com/in/patrick-gu/"><img src="assets/img/linkedin_logo_black.png" alt=""></a></li>
+                        <li><a href="https://www.github.com/BaekiPog"><img src="assets/img/github_logo.png" alt=""></a></li>
+                        <li><a href="mailto: patrickgu@berkeley.edu"><img src="assets/img/mail.png" alt=""></a></li>
+                    </ul>                        
+                    </div>
+                </div>
+            </div>
+        </main>
 
-                <p class="bio">
-                    a 2nd year undergraduate student at UC Berkeley studying computer science.
-                    Recently I'm learning more about web development and trying to
-                    create a few projects (such as this website). Stay tuned!
-                </p>
-                    
-            </div>    
-        </div>
+        <script src="script.js"></script>
 
     </body>
 </html>
